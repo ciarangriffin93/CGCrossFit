@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-kbalz3fi4jx.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-tgfxwyrylmz.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'blog',
 ]
 
@@ -90,7 +91,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriffi-cgcrossfit-kbalz3fi4jx.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriffi-cgcrossfit-tgfxwyrylmz.ws.codeinstitute-ide.net'
 ]
 
 # Password validation
