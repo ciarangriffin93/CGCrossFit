@@ -10,4 +10,9 @@ class EventList(generic.ListView):
 
 def event_detail(request, slug):
     event = get_object_or_404(Event, slug=slug)
-    return render(request, 'blog/event_detail.html', {'event': event})
+    return render(
+        request, 
+        'blog/event_detail.html', 
+        {'event': event,
+        "coder": "Ciaran Griffin"}
+    )
