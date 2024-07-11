@@ -30,7 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-0wti8qeeqp4.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-pg5ijpbrmxm.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'blog',
     'about',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -94,7 +95,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriffi-cgcrossfit-0wti8qeeqp4.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriffi-cgcrossfit-pg5ijpbrmxm.ws.codeinstitute-ide.net'
 ]
 
 # Password validation
