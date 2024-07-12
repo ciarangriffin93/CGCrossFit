@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+<!-- Contact form page -->
+{% block content %}
+<div class="background-contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="mt-5 mb-3 text-center">
+                <div class="contact-form">
+                    <h1 class="heading">Get In Touch </h1>
+                    <hr>
+                    <p>If you would like to know more about events, other questions that come to your mind!</p>
+                    <p>I will reply to your email</p>
+                <form id="contactForm" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}                
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
