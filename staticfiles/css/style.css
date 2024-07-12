@@ -31,9 +31,13 @@
 
 .brand {
     font-family: Lato, sans-serif;
-    font-size: 1.4rem;
+    font-size: 3rem;
     font-weight: 800;
-    color: #811857;
+    color: #000000;
+}
+
+.green-fit {
+    color: #268118;
 }
 
 .light-bg {
@@ -59,10 +63,10 @@
 
 .image-flash {
     position: absolute;
-    bottom: 5%;
-    min-width: 30%;
+    bottom: 10%;
+    min-width: 40%;
     left: -2px;
-    background-color: #811857;
+    background-color: #268118;
 }
 
 .scale {
@@ -181,7 +185,7 @@
 
 /* footer */
 footer {
-    background-color: #811857;
+    background-color: #268118;
     display: flex;
     flex-direction: row;
     justify-content: center;
