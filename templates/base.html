@@ -52,6 +52,10 @@
                         <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
                             href="{% url 'contact' %}">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page"
+                            href="#">Bookings</a>
+                    </li>
                 </ul>
             </div>
         </div>
