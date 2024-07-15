@@ -3,6 +3,9 @@
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'contact' as contact_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %}
 
 
 <!DOCTYPE html>
@@ -24,7 +27,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Custom CSS -->
-     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -33,7 +36,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Cross<span class="green-fit">Fit</span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Cross<span
+                        class="green-fit">Fit</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,7 +50,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                            href="{% url 'about' %}">About Me</a>
+                            href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == contact_url %}active{% endif %}" aria-current="page"
@@ -56,6 +60,18 @@
                         <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page"
                             href="#">Bookings</a>
                     </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_logout' %}">Sign out</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_signup' %}">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_login' %}">Sign in</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
@@ -88,7 +104,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 
