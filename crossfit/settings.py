@@ -28,9 +28,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-5rtnn0zeemv.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-2i5u1ff3nuo.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 
 # Application definition
@@ -42,13 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'django.contrib.sites',
     'crispy_forms',
     'crispy_bootstrap5',
-    'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'django_summernote',
+    'cloudinary',
     'blog',
     'about',
     'contact',
@@ -110,7 +112,7 @@ DATABASES = {
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriffi-cgcrossfit-5rtnn0zeemv.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriffi-cgcrossfit-2i5u1ff3nuo.ws.codeinstitute-ide.net'
 ]
 
 # Password validation
