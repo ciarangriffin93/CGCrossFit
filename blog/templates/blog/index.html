@@ -3,7 +3,22 @@
 
 {% block content %}
 
-<!-- index.html content starts here -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100 hero-img-slide"
+                src="{% static 'images/crossfit3.webp' %}"
+                alt="crossfit">
+            <div class="carousel-caption d-none d-md-block col-md-8 col-lg-8">
+                 <h3>WELCOME TO CROSSFIT DUBLIN</h3>
+                {% if user.is_authenticated %}
+                <h3>Welcome back {{user.username}}!</h3>
+                {% else %}
+                <a href="{% url 'account_signup' %}" class="btn btn-primary">Join Now!</a>
+                {% endif %}
+            </div>
+        </div>
+        </div>
 <div class="container-fluid">
     <div class="row">
 
