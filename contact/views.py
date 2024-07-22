@@ -4,9 +4,7 @@ from .forms import ContactForm
 
 
 def contact(request):
-    '''
-    Save contact form to database and alerts user of actions outcome.
-    '''
+    
     form = ContactForm()
     if request.method == 'POST':
         form = ContactForm(request.POST)
