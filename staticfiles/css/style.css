@@ -176,12 +176,12 @@
 }
 
 .contact {
-    background: linear-gradient(to right, #9bf03f, #80c13f, #47b816, #1b9b0a, #295500);
+    background: linear-gradient(to right,  #295500,  #1b9b0a, #9df478, #1b9b0a, #295500);
   }
 
 /* footer */
 footer {
-    background-color: #268118;
+    background: linear-gradient(to right,  #295500,  #1b9b0a, #9df478, #1b9b0a, #295500);
     display: flex;
     flex-direction: row;
     justify-content: center;
