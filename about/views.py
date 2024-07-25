@@ -31,3 +31,6 @@ def about_me(request):
         "comment_form": comment_form,
     },
     )
+
+def classes(request):
+    return render(request, 'classes.html')
