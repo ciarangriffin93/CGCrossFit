@@ -173,6 +173,28 @@
     border: none;
 }
 
+/*--- Classes ---*/
+
+.daily-routine {
+    margin-bottom: 20px;
+}
+
+li {
+    padding: 10px;
+    text-align: center;
+}
+
+.week-name {
+    background-color: #268118;
+    color: white;
+}
+
+.work-hours {
+    background-color: #bbf0b4;
+}
+
+/*---- Contact ----*/
+
 .contact {
     background: linear-gradient(to right,  #295500,  #1b9b0a, #9df478, #1b9b0a, #295500);
   }
