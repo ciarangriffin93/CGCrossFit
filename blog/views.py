@@ -56,3 +56,19 @@ def comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('event_detail', args=[slug]))
+
+def comment_delete(request, slug, comment_id):
+    """
+    view  delete comment
+    """
+    queryset = Event.objects.filter(status=1)
+    event  = get_object_or_404(queryset, slug=slug)
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if comment.author == request.user:
+        comment.delete()
+        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+
+    return HttpResponseRedirect(reverse('event_detail', args=[slug]))
