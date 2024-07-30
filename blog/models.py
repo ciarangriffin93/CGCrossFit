@@ -23,3 +23,12 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title
+
+class Comment(models.Model):
+    event  = models.ForeignKey(
+        Event, on_delete=models.CASCADE, related_name="blog_comments")
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="blog_commenter_authors")
+    body = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)

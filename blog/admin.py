@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Event
+from .models import Event, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Event)
@@ -10,3 +10,5 @@ class EventAdmin(SummernoteModelAdmin):
     list_filter = ('status', 'created_on',)
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content',)
+
+admin.site.register(Comment)
