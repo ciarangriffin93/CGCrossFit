@@ -1,11 +1,13 @@
 :root {
 
-    /* Colours */
+    /*--- Colours ---*/
+
     --background: #3f006a0f; 
     --black: #000;
     --off-white: #000000;
   
-    /* Utils */
+    /*--- Utils ---*/
+
       --smal-box-shadow: 1px -1px 7px 0 #00000061;
       --border: 1px solid #00000030;
   }
@@ -87,7 +89,7 @@
 }
 
 .masthead-text {
-    background-color: #268118;
+    background: linear-gradient(to right,  #295500,  #1b9b0a, #1b9b0a, #295500);
     color: white;
     position: relative;
 }
@@ -104,16 +106,14 @@
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #a7c4a3;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+    background-color: #295500;
+    -webkit-transform: skew(5deg);
+    -moz-transform: skew(5deg);
+    transform: skew(5deg);
 }
 
 .event-link {
     text-decoration: none;
-    color: #445261;
 }
 
 .event-link:hover,
@@ -196,24 +196,27 @@ li {
     background-color: #bbf0b4;
 }
 
-/*---- Contact ----*/
+/*--- Contact ---*/
 
 .contact {
     background: linear-gradient(to right,  #295500,  #1b9b0a, #9df478, #1b9b0a, #295500);
   }
 
-/*----- MAP -----*/
+/*--- MAP ---*/
+
 #map {
     height: 30vh;
     width: 50%;
 }
 
-/* optional hover to match the zoom icons, but on the search control */
+/*--- optional hover to match the zoom icon */
+
 .leaflet-touch .geocoder-control-input:hover {
     background-color: #000000;
 }
 
-/* footer */
+/*--- footer ---*/
+
 footer {
     background: linear-gradient(to right,  #295500,  #1b9b0a, #9df478, #1b9b0a, #295500);
     display: flex;

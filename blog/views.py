@@ -6,6 +6,7 @@ from .models import Event, Comment
 from .forms import CommentForm
 
 # Create your views here.
+
 class EventList(generic.ListView):
     queryset = Event.objects.filter(status=1)
     template_name = "blog/index.html"

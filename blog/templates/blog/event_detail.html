@@ -6,9 +6,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6  masthead-text">
-                <!-- Event title  -->
+                <!--- Event title --->
                 <h1 class="event-title">{{ event.title }}</h1>
-                <!--Event author goes before the | the event created date goes after -->
+                <!--- Event author goes before the | the event created date goes after --->
                 <p class="event-subtitle">{{ event.author }} | {{ event.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
@@ -22,7 +22,7 @@
     <div class="row">
         <div class="ol-md-12 card mb-4 mt-3">
             <div class="card-body">
-                <!-- Event goes inside card-text. -->
+                <!--- Event goes inside card-text --->
                 <h2>{{ coder }}</h2>
                 <p class="card-text">
                     {{event.content | safe }}
@@ -30,7 +30,8 @@
             </div>
         </div>
     </div>
-    <!-- Displaying count of comments -->
+    
+    <!--- Displaying count of comments --->
   <div class="row">
     <div class="col-1">
       <strong class="text-secondary">
@@ -41,7 +42,8 @@
       <hr>
     </div>
   </div>
-  <!-- Displaying Comments -->
+
+  <!--- Displaying Comments --->
   <div class="row comments-container" style="padding: 10px; background-color: rgb(225, 225, 225);"">
     <div class="col-md-8 card mb-4  mt-3">
       <h2 class="mt-4">Comments:</h2>
@@ -72,11 +74,12 @@
            comment_id="{{ comment.id }}">Edit</button>
            {% endif %}
         </div>
-        <!-- loop here -->
+        <!--- loop here --->
         {% endfor %}
       </div>
     </div>
-    <!-- Create New Comments -->
+
+    <!--- Create New Comments --->
     <div class="col-md-4 card mb-4 mt-3">
         <div class="card-body">
           {% if user.is_authenticated %}
@@ -96,7 +99,8 @@
       </div>
   </div>
 </div>
-<!-- Delete confirmation modal -->
+
+<!--- Delete confirmation modal --->
 <div class="modal fade" id="deleteModal" tabindex="-1"
   aria-labelledby="deleteModalLabel" aria-hidden="true">
   <div class="modal-dialog">
