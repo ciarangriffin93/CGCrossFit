@@ -35,7 +35,7 @@
     <div class="col-1">
       <strong>
         {% if user.is_authenticated %}
-        <form class="d-inline" action="#" method="POST">
+        <form class="d-inline" action="{% url 'event_like' event.slug %}" method="POST">
           {% csrf_token %}
           {% if liked %}
 
@@ -46,14 +46,14 @@
           <button type="submit" name="blogevent_id" value="{{event.slug}}" class="btn-like"><i
               class="far fa-heart"></i></button>
           {% endif %}
-          
+
         </form>
         {% else %}
 
         <span class="text-secondary cursor-pointer"><i class="far fa-heart"></i></span>
         {% endif %}
 
-        <!-- The number of likes goes before the closing strong tag -->
+        <!-- The number of likes  -->
         <span class="text-secondary">{{ event.number_of_likes }} </span>
 
       </strong>
