@@ -63,8 +63,8 @@
                             href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == bookings_url %}active{% endif %}" aria-current="page"
-                            href="#">Bookings</a>
+                        <a class="nav-link {% if request.path == classes_url %}active{% endif %}" aria-current="page"
+                        href="{% url 'class_list' %}">Bookings</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">

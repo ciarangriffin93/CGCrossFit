@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Available Classes</h1>
+  <ul>
+    {% for class in classes %}
+      <li><a href="{% url 'class_detail' class.pk %}">{{ class.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ crossfit_class.name }}</h1>
+  <p>{{ crossfit_class.description }}</p>
+  <p>Instructor: {{ crossfit_class.instructor }}</p>
+  <p>Start Time: {{ crossfit_class.start_time }}</p>
+  <p>End Time: {{ crossfit_class.end_time }}</p>
+  <p>Max Participants: {{ crossfit_class.max_participants }}</p>
+  
+  {% if user.is_authenticated %}
+    <form method="post" action="{% url 'book_class' crossfit_class.pk %}">
+      {% csrf_token %}
+      <button type="submit">Book Now</button>
+    </form>
+  {% else %}
+    <p><a href="{% url 'login' %}">Login</a> to book this class.</p>
+  {% endif %}
+{% endblock %}
