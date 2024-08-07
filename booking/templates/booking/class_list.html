@@ -1,10 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Available Classes</h1>
+
+<div class="container mt-3 min-vh-100">
+  <div class="classes">
+    <div
+      class="container py-5 d-flex justify-content-center align-items-center" >
+      <div>
+        <h1 class="fw-bold">Available Classes</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-2 p-4 pb-0 h3 rfs-11 fw-light">
   <ul>
     {% for class in classes %}
-      <li><a href="{% url 'class_detail' class.pk %}">{{ class.name }}</a></li>
+     <li><a href="{% url 'class_detail' class.pk %}">{{ class.name }}</a></li>
     {% endfor %}
   </ul>
+  </div>
 {% endblock %}
