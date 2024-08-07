@@ -7,4 +7,5 @@ urlpatterns = [
     path('class/<int:pk>/book/', views.book_class, name='book_class'),
     path('class/<int:pk>/cancel/', views.cancel_booking, name='cancel_booking'),
     path('thank-you/', views.thank_you, name='thank_you'),
+    path('cancelled/', views.cancelled, name='cancelled'),
 ]

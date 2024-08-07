@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-3 min-vh-100">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="alert alert-warning" role="alert">
+                <h4 class="alert-heading">Booking Cancelled</h4>
+                <p>Your booking has been successfully cancelled. Hope to see you inclasses soon.</p>
+                <hr>
+                <p class="mb-0"><a href="{% url 'class_list' %}" class="btn btn-primary">Return to Class List</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

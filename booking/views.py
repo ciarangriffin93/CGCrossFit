@@ -27,7 +27,11 @@ def cancel_booking(request, pk):
     booking = Booking.objects.filter(user=request.user, crossfit_class=crossfit_class)
     if booking.exists():
         booking.delete()
+        return redirect('cancelled')
     return redirect('class_detail', pk=crossfit_class.pk)
 
 def thank_you(request):
     return render(request, 'booking/thank_you.html')
+
+def cancelled(request):
+    return render(request, 'booking/cancelled.html')
