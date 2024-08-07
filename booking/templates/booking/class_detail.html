@@ -1,12 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
 <div class="container mt-3 min-vh-100">
   <div class="classes">
     <div class="container py-5 d-flex justify-content-center align-items-center">
       <div>
-        <br>
         <h1>{{ crossfit_class.name }}</h1>
         <p>{{ crossfit_class.description }}</p>
         <p>Instructor: {{ crossfit_class.instructor }}</p>
@@ -15,15 +13,22 @@
         <p>Max Participants: {{ crossfit_class.max_participants }}</p>
 
         {% if user.is_authenticated %}
-        <form method="post" action="{% url 'book_class' crossfit_class.pk %}">
-          {% csrf_token %}
-          <button type="submit">Book Now</button>
-        </form>
+          {% if is_booked %}
+            <form method="post" action="{% url 'cancel_booking' crossfit_class.pk %}">
+              {% csrf_token %}
+              <button type="submit">Cancel Booking</button>
+            </form>
+          {% else %}
+            <form method="post" action="{% url 'book_class' crossfit_class.pk %}">
+              {% csrf_token %}
+              <button type="submit">Book Now</button>
+            </form>
+          {% endif %}
         {% else %}
-        <h1><a href="{% url 'account_login' %}">Login</a> to book this classes.</h1>
+          <h1><a href="{% url 'account_login' %}">Login</a> to book this class.</h1>
         {% endif %}
-        {% endblock %}
       </div>
     </div>
   </div>
 </div>
+{% endblock %}

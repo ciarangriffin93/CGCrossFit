@@ -8,13 +8,22 @@ def class_list(request):
 
 def class_detail(request, pk):
     crossfit_class = get_object_or_404(CrossfitClass, pk=pk)
-    return render(request, 'booking/class_detail.html', {'crossfit_class': crossfit_class})
+    is_booked = False
+    if request.user.is_authenticated:
+        is_booked = Booking.objects.filter(user=request.user, crossfit_class=crossfit_class).exists()
+    return render(request, 'booking/class_detail.html', {'crossfit_class': crossfit_class, 'is_booked': is_booked})
 
 @login_required
 def book_class(request, pk):
     crossfit_class = get_object_or_404(CrossfitClass, pk=pk)
-    if Booking.objects.filter(user=request.user, crossfit_class=crossfit_class).exists():
-        # Handle already booked
-        return redirect('class_detail', pk=crossfit_class.pk)
-    Booking.objects.create(user=request.user, crossfit_class=crossfit_class)
+    if not Booking.objects.filter(user=request.user, crossfit_class=crossfit_class).exists():
+        Booking.objects.create(user=request.user, crossfit_class=crossfit_class)
+    return redirect('class_detail', pk=crossfit_class.pk)
+
+@login_required
+def cancel_booking(request, pk):
+    crossfit_class = get_object_or_404(CrossfitClass, pk=pk)
+    booking = Booking.objects.filter(user=request.user, crossfit_class=crossfit_class)
+    if booking.exists():
+        booking.delete()
     return redirect('class_detail', pk=crossfit_class.pk)
