@@ -145,39 +145,39 @@
 
 .btn-like:hover,
 .btn-like:active {
-	color: #f93200;
-	background: transparent;
-	border: none;
+    color: #f93200;
+    background: transparent;
+    border: none;
 }
 
 /*--- Blog ---*/
 
 .blog-section {
-	padding-top: 114px;
-	padding-bottom: 114px;
+    padding-top: 114px;
+    padding-bottom: 114px;
 }
 
 .blog-section .blog-btn {
-	padding-top: 84px;
+    padding-top: 84px;
 }
 
 .single-blog-item {
-	background-color: rgb(225, 225, 225);
-	position: relative;
-	margin-bottom: 30px;
-	padding-bottom: 91px;
+    background-color: rgb(225, 225, 225);
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 91px;
 }
 
 .single-blog-item.plain-text {
-	padding-left: 45px;
-	padding-top: 155px;
-	padding-right: 35px;
-	height: calc( 100% - 30px);
-	position: relative;
+    padding-left: 45px;
+    padding-top: 155px;
+    padding-right: 35px;
+    height: calc( 100% - 30px);
+    position: relative;
 }
 
 .single-blog-item.plain-text .blog-text {
-	text-align: center;
+    text-align: center;
 }
 
 .card {
@@ -186,11 +186,11 @@
 }
 
 .author {
-	color: #295500;
-	margin: 4px;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 800;
+    color: #295500;
+    margin: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
 }
 
 .blog-img img {
@@ -204,12 +204,25 @@
 }
 
 .blog-text span.blog-time {
-	display: inline-block;
-	font-size: 16px;
-	color: #858585;
-	font-weight: 500;
-	font-family: "Oswald", sans-serif;
-	margin-bottom: 34px;
+    display: inline-block;
+    font-size: 16px;
+    color: #858585;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 34px;
+}
+
+/*---------------------
+  About Us
+-----------------------*/
+
+.about-section {
+    padding-top: 114px;
+    padding-bottom: 85px;
+}
+
+.section-title {
+    margin-bottom: 30px;
 }
 
 /*--- Classes ---*/

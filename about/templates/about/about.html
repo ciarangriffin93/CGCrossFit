@@ -2,21 +2,21 @@
 {% block content %}
 {% load static %}
 
-<div class="container-fluid mt-5">
+<section class="about-section">
+<div class="container">
   <div class="row">
     <div class="col-md-6">
-      <h1 class='text'>Who Am I</h1>
+      <h1 class="section-title">You all need to know <br/>about Crossfit!!</h1>
       <hr>
+
       <h2>{{ about.title }}</h2>
       <!-- Content goes directly underneath this -->
       {{ about.content | safe }}
     </div>
-    <div class="col-md-6 overflow-hidden mb-8">
-      <img src="{% static 'images/crossfit2.jpg' %}" width="60%"/>
+    <div class="col-lg-6">
+      <img src="{% static 'images/crossfit2.jpg' %}" width="100%"/>
     </div>
   </div>
-  <div class="row">
-    <div class="col text-right">
-    </div>
-  </div>
+</div>
+</section>
 {% endblock content %}
