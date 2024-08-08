@@ -21,10 +21,10 @@
 <div class="container p-4">
   <div class="row">
     <div class="ol-md-12 card mb-4 mt-3">
-      <div class="card-body">
+      <div class="blog-body">
         <!--- Event goes inside card-text --->
         <h2>{{ coder }}</h2>
-        <p class="card-text">
+        <p class="blog-text">
           {{event.content | safe }}
         </p>
       </div>
@@ -73,10 +73,10 @@
   </div>
 
   <!--- Displaying Comments --->
-  <div class="row comments-container" style="padding: 10px; background-color: rgb(225, 225, 225);"">
+  <div class="row comments-container" style="padding: 10px; background-color: rgb(225, 225, 225);">
     <div class=" col-md-8 card mb-4 mt-3">
     <h2 class="mt-4">Comments:</h2>
-    <div class="card-body">
+    <div class="blog-body">
 
       {% for comment in comments %}
       <div class="p-2 comments
@@ -108,7 +108,7 @@
 
   <!--- Create New Comments --->
   <div class="col-md-4 card mb-4 mt-3">
-    <div class="card-body">
+    <div class="blog-body">
       {% if user.is_authenticated %}
       <h3>Leave a comment:</h3>
       <p>Posting as: {{ user.username }}</p>

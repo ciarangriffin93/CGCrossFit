@@ -51,33 +51,11 @@
     background-color: #f4f7fa;
 }
 
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 10%;
-    min-width: 40%;
-    left: -2px;
-    background-color: #268118;
-}
-
 .scale {
     width: 100%;
     height: auto;
 }
 
-.author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
-}
 
 .masthead {
     margin-top: 10px;
@@ -167,9 +145,71 @@
 
 .btn-like:hover,
 .btn-like:active {
-    color: #f93200;
-    background: transparent;
+	color: #f93200;
+	background: transparent;
+	border: none;
+}
+
+/*--- Blog ---*/
+
+.blog-section {
+	padding-top: 114px;
+	padding-bottom: 114px;
+}
+
+.blog-section .blog-btn {
+	padding-top: 84px;
+}
+
+.single-blog-item {
+	background-color: rgb(225, 225, 225);
+	position: relative;
+	margin-bottom: 30px;
+	padding-bottom: 91px;
+}
+
+.single-blog-item.plain-text {
+	padding-left: 45px;
+	padding-top: 155px;
+	padding-right: 35px;
+	height: calc( 100% - 30px);
+	position: relative;
+}
+
+.single-blog-item.plain-text .blog-text {
+	text-align: center;
+}
+
+.card {
     border: none;
+    background-color: transparent;
+}
+
+.author {
+	color: #295500;
+	margin: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 800;
+}
+
+.blog-img img {
+	width: 100%;
+}
+
+.blog-text {
+	padding-top: 36px;
+	padding-left: 38px;
+	padding-right: 20px;
+}
+
+.blog-text span.blog-time {
+	display: inline-block;
+	font-size: 16px;
+	color: #858585;
+	font-weight: 500;
+	font-family: "Oswald", sans-serif;
+	margin-bottom: 34px;
 }
 
 /*--- Classes ---*/
