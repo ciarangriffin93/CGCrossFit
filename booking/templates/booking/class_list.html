@@ -13,10 +13,10 @@
   </div>
 
   <div class="text-center mt-2 p-4 pb-0 h3 rfs-11 fw-light">
-  <ul>
+    <div class="classes">
     {% for class in classes %}
      <li><a href="{% url 'class_detail' class.pk %}">{{ class.name }}</a></li>
     {% endfor %}
-  </ul>
   </div>
+</div>
 {% endblock %}
