@@ -212,9 +212,7 @@
     margin-bottom: 34px;
 }
 
-/*---------------------
-  About Us
------------------------*/
+/*--- About ---*/
 
 .about-section {
     padding-top: 114px;
@@ -260,6 +258,7 @@ li {
 #map {
     height: 30vh;
     width: 50%;
+    box-shadow: 20px 0px 30px #295500;
 }
 
 /*--- optional hover to match the zoom icon */
