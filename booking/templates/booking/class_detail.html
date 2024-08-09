@@ -8,8 +8,8 @@
                 <h1>{{ crossfit_class.name }}</h1>
                 <p>{{ crossfit_class.description }}</p>
                 <p>Instructor: {{ crossfit_class.instructor }}</p>
-                <p>Start Time: {{ crossfit_class.start_time }}</p>
-                <p>End Time: {{ crossfit_class.end_time }}</p>
+                <p>Start Time: {{ crossfit_class.start_time|date:"dS F, Y @ H:i, a" }}</p>
+                <p>End Time: {{ crossfit_class.end_time|date:"dS F, Y @ H:i, a" }}</p>
                 <p>Max Participants: {{ crossfit_class.max_participants }}</p>
 
                 {% if user.is_authenticated %}
