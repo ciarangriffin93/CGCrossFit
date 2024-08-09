@@ -19,10 +19,14 @@
                             <button type="submit" class="btn btn-danger">Cancel Booking</button>
                         </form>
                     {% else %}
-                        <form method="post" action="{% url 'book_class' crossfit_class.pk %}">
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-primary">Book Now</button>
-                        </form>
+                        {% if current_participants >= crossfit_class.max_participants %}
+                            <span class="btn btn-primary">Class is full</span>
+                        {% else %}
+                            <form method="post" action="{% url 'book_class' crossfit_class.pk %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary">Book Now</button>
+                            </form>
+                        {% endif %}
                     {% endif %}
                 {% else %}
                     <h1><a href="{% url 'account_login' %}">Login</a> to book this class.</h1>
