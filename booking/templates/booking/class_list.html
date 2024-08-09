@@ -15,7 +15,7 @@
   <div class="text-center mt-2 p-4 pb-0 h3 rfs-11 fw-light">
     <div class="classes">
     {% for class in classes %}
-    <li><a href="{% url 'class_detail' class.pk %}">{{ class.name }}</a></li>
+    <li><a href="{% url 'class_detail' class.pk %}">{{ class.name }} {{ class.start_time|date:"dS F, Y @ H:i, a" }}</a></li>
     {% empty %}
      <span class="text_danger"> There are no Available classes</span>
     {% endfor %}
