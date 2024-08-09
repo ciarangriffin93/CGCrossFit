@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -78,14 +78,14 @@ def comment_delete(request, slug, comment_id):
 
     return HttpResponseRedirect(reverse('event_detail', args=[slug]))
 
-class EventLike(View):
+def event_like(request, slug):
+    event = get_object_or_404(Event, slug=slug)
+    # You have a like/unlike
+    if request.user in event.likes.all():
+        event.likes.remove(request.user)
+    else:
+        event.likes.add(request.user)
+        
+    #Back to the event detail page
+    return redirect('event_detail', slug=slug)
 
-    def Event(self, request, slug):
-        """Handle POST request to  post likes"""
-        event = get_object_or_404(queryset, slug=slug)
-        if event.likes.filter(id=request.user.id).exists():
-            event.likes.remove(request.user)
-        else:
-            event.likes.add(request.user)
-
-        return HttpResponseRedirect(reverse('event_detail', args=[slug]))
