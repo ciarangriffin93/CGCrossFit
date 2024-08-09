@@ -1,3 +1,7 @@
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ciarangriffin93/CGCrossFit)](https://github.com/ciarangriffin93/CGCrossFit/photography-blog/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ciarangriffin93/CGCrossFit)](https://github.com/ciarangriffin93/CGCrossFit/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/ciarangriffin93/CGCrossFit)](https://github.com/ciarangriffin93/CGCrossFit)
+
 # CrossFit - A Django project 4 for Code Institute
 
 ## Table of Contents
