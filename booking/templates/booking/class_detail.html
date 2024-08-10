@@ -11,7 +11,6 @@
                 <p>Start Time: {{ crossfit_class.start_time|date:"dS F, Y @ H:i, a" }}</p>
                 <p>End Time: {{ crossfit_class.end_time|date:"dS F, Y @ H:i, a" }}</p>
                 <p>Max Participants: {{ crossfit_class.max_participants }}</p>
-
                 {% if user.is_authenticated %}
                     {% if is_booked %}
                         <form method="post" action="{% url 'cancel_booking' crossfit_class.pk %}">

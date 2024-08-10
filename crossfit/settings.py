@@ -30,7 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-pkvkb5qf6hv.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-d6b3uv5eos8.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 
 # Application definition
@@ -113,7 +113,7 @@ DATABASES = {
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriffi-cgcrossfit-c1n83vfx5g2.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriffi-cgcrossfit-d6b3uv5eos8.ws.codeinstitute-ide.net'
 ]
 
 # Password validation

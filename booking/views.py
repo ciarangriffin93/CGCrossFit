@@ -2,11 +2,23 @@ from django.utils import timezone
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from .models import CrossfitClass, Booking
+from .forms import CrossfitClassForm
 
 def class_list(request):
     today = timezone.now().date()
     classes = CrossfitClass.objects.filter(end_time__date__gte=today)
     return render(request, 'booking/class_list.html', {'classes': classes})
+
+def add_class(request):
+    if request.method == 'POST':
+        form = CrossfitClassForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('class_list')  # Redirect to the class list after successful creation
+    else:
+        form = CrossfitClassForm()
+    
+    return render(request, 'booking/add_class.html', {'form': form})
 
 def class_detail(request, pk):
     crossfit_class = get_object_or_404(CrossfitClass, pk=pk)
