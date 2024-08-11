@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
 <div class="container mt-3 min-vh-100">
   <div class="classes">
-    <div
-      class="container py-5 d-flex justify-content-center align-items-center" >
+    <div class="container py-5 d-flex justify-content-center align-items-center">
       <div>
         <h1 class="fw-bold">Available Classes</h1>
       </div>
@@ -14,11 +12,27 @@
 
   <div class="text-center mt-2 p-4 pb-0 h3 rfs-11 fw-light">
     <div class="classes">
-    {% for class in classes %}
-    <li><a href="{% url 'class_detail' class.pk %}">{{ class.name }} {{ class.start_time|date:"dS F, Y @ H:i, a" }}</a></li>
-    {% empty %}
-     <span class="text_danger"> There are no Available classes</span>
-    {% endfor %}
+      {% for class in classes %}
+      <li>
+        <a href="{% url 'class_detail' class.pk %}">{{ class.name }} {{ class.start_time|date:"dS F, Y @ H:i, a" }}</a>
+
+        <!--- Edit and Delete for staff --->
+        {% if user.is_staff %}
+        <a href="{% url 'edit_class' class.pk %}" class="btn btn-sm btn-warning ms-2">Edit</a>
+        <a href="{% url 'delete_class' class.pk %}" class="btn btn-sm btn-danger ms-2">Delete</a>
+        {% endif %}
+      </li>
+      {% empty %}
+      <span class="text-danger">There are no Available classes</span>
+      {% endfor %}
+    </div>
+    
+    <!-- Add new class button for staff -->
+    {% if user.is_staff %}
+    <div class="mt-4">
+      <a href="{% url 'add_class' %}" class="btn btn-success">Add New Class</a>
+    </div>
+    {% endif %}
   </div>
 </div>
 {% endblock %}

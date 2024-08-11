@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from .models import CrossfitClass, Booking
 from .forms import CrossfitClassForm
+from django.contrib.admin.views.decorators import staff_member_required
 
 def class_list(request):
     today = timezone.now().date()
@@ -57,3 +58,27 @@ def thank_you(request):
 
 def cancelled(request):
     return render(request, 'booking/cancelled.html')
+
+@staff_member_required
+def edit_class(request, pk):
+    crossfit_class = get_object_or_404(CrossfitClass, pk=pk)
+    
+    if request.method == 'POST':
+        form = CrossfitClassForm(request.POST, instance=crossfit_class)
+        if form.is_valid():
+            form.save()
+            return redirect('class_list')
+    else:
+        form = CrossfitClassForm(instance=crossfit_class)
+    
+    return render(request, 'booking/edit_class.html', {'form': form})
+
+@staff_member_required
+def delete_class(request, pk):
+    crossfit_class = get_object_or_404(CrossfitClass, pk=pk)
+    
+    if request.method == 'POST':
+        crossfit_class.delete()
+        return redirect('class_list')
+    
+    return render(request, 'booking/delete_class.html', {'crossfit_class': crossfit_class})
