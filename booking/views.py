@@ -20,6 +20,7 @@ def add_class(request):
     
     return render(request, 'booking/add_class.html', {'form': form})
 
+
 def class_detail(request, pk):
     crossfit_class = get_object_or_404(CrossfitClass, pk=pk)
     is_booked = False
