@@ -287,6 +287,11 @@
     padding: 10px;
 }
 
+.heart-color {
+    color: #f93200;
+    font-weight: bold;
+}
+
 /*--- Classes ---*/
 
 .classes {
