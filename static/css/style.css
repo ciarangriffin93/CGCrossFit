@@ -111,16 +111,25 @@
     color: lightgray;
 }
 
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
+.btn-outline-secondary{
+    background-color: #295500;
+    color: #fff;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #1b9b0a;
+    color: #fff;
+}
+
+.btn-signup {
+    background-color: #295500;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #1b9b0a;
+    color: #fff;
 }
 
 .link {
@@ -188,10 +197,12 @@
 
 .btn {
     background-color: #295500;
+    color: #fff;
 }
 
-.btn-info {
-    color: #ffffff;
+.btn-info:hover {
+    background-color: #1b9b0a;
+    color: #fff;
 }
 
 .card {
@@ -245,6 +256,12 @@
     border-bottom-right-radius: 20px;
 }
 
+/*--- Booking ---*/
+
+.btn-primary:hover {
+    background-color: #1b9b0a;
+}
+
 /*--- Classes ---*/
 
 .classes {
@@ -274,6 +291,10 @@ li {
 .contact {
     background: linear-gradient(to right,  #295500,  #1b9b0a, #9df478, #1b9b0a, #295500);
   }
+
+.btn-success:hover {
+    background-color: #1b9b0a;
+}
 
 /*--- MAP ---*/
 

@@ -113,7 +113,7 @@ DATABASES = {
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriffi-cgcrossfit-k3hk3rp29bk.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriffi-cgcrossfit-arocchr40id.ws.codeinstitute-ide.net'
 ]
 
 # Password validation
