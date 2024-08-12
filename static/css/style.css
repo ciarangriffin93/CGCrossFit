@@ -166,6 +166,10 @@
     position: relative;
     margin-bottom: 30px;
     padding-bottom: 91px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .single-blog-item.plain-text {
@@ -178,6 +182,14 @@
 
 .single-blog-item.plain-text .blog-text {
     text-align: center;
+}
+
+.btn {
+    background-color: #295500;
+}
+
+.btn-info {
+    color: #ffffff;
 }
 
 .card {
@@ -259,6 +271,13 @@ li {
     height: 30vh;
     width: 50%;
     box-shadow: 20px 0px 30px #295500;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.section-heading {
+    color: #295500;
+    font-weight: bold;
 }
 
 /*--- Optional hover to match the zoom icon */

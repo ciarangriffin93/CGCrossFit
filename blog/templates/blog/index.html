@@ -8,7 +8,7 @@
         <div class="carousel-item active">
             <img class="d-block w-100 hero-img-slide" src="{% static 'images/crossfit3.webp' %}" alt="crossfit">
             <div class="carousel-caption d-none d-md-block col-md-8 col-lg-8">
-                <h3>WELCOME TO CROSSFIT DUBLIN</h3>
+                <h3>WELCOME TO CROSSFIT DUBLIN!</h3>
                 {% if user.is_authenticated %}
                 <h3>Welcome back {{user.username}}!</h3>
                 {% else %}
@@ -19,51 +19,46 @@
     </div>
 
     <!--- Blog  --->
-    <section class="blog-section spad">
-        <div class="container-fluid">
+    <section class="blog-section">
+        <div class="col-lg-12 col-md-6">
             <div class="row">
-                <div class="col-lg-12 col-md-6">
-                    <div class="row">
-                        {% for event in event_list %}
-                        <div class="col-md-4">
-                            <div class="card mb-4">
-                                <div class="single-blog-item blog-item">
-                                    <div class="blog-img">
-                                        <div class="blog-text">
-                                            <p class="author">Coach: {{ event.author }}</p>
-                                        </div>
-                                        {% if "placeholder" in event.featured_image.url %}
-                                        <img class="blog-img-top" src="{% static 'images/default.jpg' %}"
-                                            alt="Computor with codeing window open">
-                                        {% else %}
-                                        <img class="blog-img-top" src="{{ event.featured_image.url }}"
-                                            alt="Unique event picture">
-                                        {% endif %}
-                                    </div>
-                                    <div class="blog-text">
-                                        <span class="blog-time">{{ event.created_on}}
-                                        </span>
-                                        <a href="{% url 'event_detail' event.slug %}" class="event-link">
-                                            <h2 class="card-title">{{ event.title }}</h2>
-                                            <p class="card-text">{{ event.excerpt }}</p>
-                                        </a>
-                                        <!--- Display event  --->
-                                        <p class="part-excerpt">{{ event.excerpt|slice:':100' }}...</p>
-                                        <a href="{% url 'event_detail' event.slug  %}"
-                                            class="read-more btn btn-info">Read
-                                            More</a>
-                                    </div>
+                {% for event in event_list %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="single-blog-item blog-item">
+                            <div class="blog-img">
+                                <div class="blog-text">
+                                    <p class="author">Coach: {{ event.author }}</p>
                                 </div>
+                                {% if "placeholder" in event.featured_image.url %}
+                                <img class="blog-img-top" src="{% static 'images/default.jpg' %}"
+                                    alt="Computor with codeing window open">
+                                {% else %}
+                                <img class="blog-img-top" src="{{ event.featured_image.url }}"
+                                    alt="Unique event picture">
+                                {% endif %}
+                            </div>
+                            <div class="blog-text">
+                                <span class="blog-time">{{ event.created_on}}
+                                </span>
+                                <a href="{% url 'event_detail' event.slug %}" class="event-link">
+                                    <h2 class="card-title">{{ event.title }}</h2>
+                                    <p class="card-text">{{ event.excerpt }}</p>
+                                </a>
+                                <!--- Display event  --->
+                                <p class="part-excerpt">{{ event.excerpt|slice:':100' }}...</p>
+                                <a href="{% url 'event_detail' event.slug  %}" class="read-more btn btn-info">Read
+                                    More</a>
                             </div>
                         </div>
-                        {% if forloop.counter|divisibleby:3 %}
-                    </div>
-                    <div class="row">
-                        {% endif %}
-                        {% endfor %}
-
                     </div>
                 </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+
             </div>
         </div>
     </section>
