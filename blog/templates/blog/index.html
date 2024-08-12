@@ -37,10 +37,15 @@
                                 <img class="blog-img-top" src="{{ event.featured_image.url }}"
                                     alt="Unique event picture">
                                 {% endif %}
+
                             </div>
                             <div class="blog-text">
                                 <span class="blog-time">{{ event.created_on}}
                                 </span>
+                                <span class="text-secondary cursor-pointer"><i class="far fa-heart heart-color"></i></span>
+                                 <!-- The number of likes  -->
+                                  <span class="text-secondary">{{ event.number_of_likes }} </span>
+
                                 <a href="{% url 'event_detail' event.slug %}" class="event-link">
                                     <h2 class="card-title">{{ event.title }}</h2>
                                     <p class="card-text">{{ event.excerpt }}</p>
