@@ -164,8 +164,13 @@
 /*--- Blog ---*/
 
 .blog-section {
-    padding-top: 114px;
-    padding-bottom: 114px;
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5%;
+    margin: 0 auto;
+    padding: 20px 0 100px 0;
 }
 
 .blog-section .blog-btn {
@@ -277,6 +282,11 @@
     color: #fff;
 }
 
+.class-list {
+    background-color: rgb(225, 225, 225);
+    padding: 10px;
+}
+
 /*--- Classes ---*/
 
 .classes {
@@ -319,24 +329,20 @@ li {
     box-shadow: 20px 0px 30px #295500;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin: 20px;
+    
 }
 
 .section-heading {
     color: #295500;
     font-weight: bold;
+    margin: 20px;
 }
 
 /*--- Optional hover to match the zoom icon */
 
 .leaflet-touch .geocoder-control-input:hover {
     background-color: #000000;
-}
-
-/*--- Booking ---*/
-
-.class-list {
-    background-color: rgb(225, 225, 225);
-    padding: 10px;
 }
 
 /*--- Footer ---*/
@@ -353,4 +359,4 @@ footer {
 .social-icon {
     height: 2rem;
     margin: 1rem;
-}
+} 
