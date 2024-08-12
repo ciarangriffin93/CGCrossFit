@@ -262,6 +262,21 @@
     background-color: #1b9b0a;
 }
 
+.btn-delete:hover {
+    background-color: #f93200;
+    color: #fff;
+}
+
+.btn-cancel:hover {
+    background-color: #858585;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #2773fe;
+    color: #fff;
+}
+
 /*--- Classes ---*/
 
 .classes {
