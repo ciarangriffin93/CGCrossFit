@@ -235,6 +235,14 @@
     margin-bottom: 30px;
 }
 
+.about-image img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 /*--- Classes ---*/
 
 .classes {
@@ -308,4 +316,3 @@ footer {
     height: 2rem;
     margin: 1rem;
 } 
-
