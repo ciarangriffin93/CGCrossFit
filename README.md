@@ -14,6 +14,12 @@
 
 ## Wireframes
 
+## Database Diagram
+This project the Django User Model.
+The data schema was created using [Lucid](https://lucid.app/ "lucid website homepage").
+
+![Image of Database](/docs/images/database.png)
+
 ## General Features
 
 ## Colours
