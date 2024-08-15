@@ -154,6 +154,7 @@
     background: #E84610;
 }
 
+
 .btn-like:hover,
 .btn-like:active {
     color: #f93200;
@@ -210,6 +211,10 @@
     color: #fff;
 }
 
+#deleteConfirm {
+    background: #E84610;
+}
+
 .card {
     border: none;
     background-color: transparent;
@@ -240,6 +245,11 @@
     font-weight: 500;
     font-family: "Oswald", sans-serif;
     margin-bottom: 34px;
+}
+
+.comments-container {
+    padding: 10px;
+    background-color: rgb(225, 225, 225);
 }
 
 .single-sections {
