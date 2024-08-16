@@ -82,12 +82,11 @@
                                  <!-- The number of likes  -->
                                   <span class="text-secondary">{{ event.number_of_likes }} </span>
 
-                                <a href="{% url 'event_detail' event.slug %}" class="event-link">
+                                <a class="event-link">
                                     <h2 class="card-title">{{ event.title }}</h2>
-                                    <p class="card-text">{{ event.excerpt }}</p>
                                 </a>
                                 <!--- Display event  --->
-                                <p class="part-excerpt">{{ event.excerpt|slice:':100' }}...</p>
+                                <p class="part-excerpt">{{ event.excerpt|slice:':100' }}</p>
                                 <a href="{% url 'event_detail' event.slug  %}" class="read-more btn btn-info">Read
                                     More</a>
                             </div>
