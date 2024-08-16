@@ -30,7 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-xwx369y5h9a.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-r34eroifoft.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 
 # Application definition
