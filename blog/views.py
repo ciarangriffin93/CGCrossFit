@@ -1,24 +1,25 @@
-from django.shortcuts import render, get_object_or_404, reverse, redirect
-from django.views import generic, View
+from django.shortcuts import render, get_object_or_404, redirect
+from django.urls import reverse, reverse_lazy
+from django.views import generic
 from django.contrib import messages
-from django.http import HttpResponseRedirect
 from .models import Event, Comment
 from .forms import CommentForm
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
+from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 
-# Create your views here.
-
+# List view for events
 class EventList(generic.ListView):
     queryset = Event.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 3
 
+# Detail view for event including comments
 def event_detail(request, slug):
     event = get_object_or_404(Event, slug=slug)
     comments = event.blog_comments.all().order_by("-created_on")
-    liked = False 
-    if event.likes.filter(id=request.user.id).exists():
-        liked = True
+    liked = event.likes.filter(id=request.user.id).exists() if request.user.is_authenticated else False
     comment_count = event.blog_comments.filter(approved=True).count()
+
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -26,48 +27,64 @@ def event_detail(request, slug):
             comment.author = request.user
             comment.event = event
             comment.save()
-            messages.add_message(
-                request, messages.SUCCESS,
-                'Comment submitted and awaiting approval'
-            )
+            messages.success(request, 'Comment submitted and awaiting approval')
+            return redirect('event_detail', slug=slug)
 
     comment_form = CommentForm()
-    
-    return render(
-        request, 
-        'blog/event_detail.html', 
-        {'event': event,
-        "liked": liked,
-        "comments": comments,
-        "comment_count": comment_count,
-        "comment_form": comment_form,
-        },
-    )
+    return render(request, 'blog/event_detail.html', {
+        'event': event,
+        'liked': liked,
+        'comments': comments,
+        'comment_count': comment_count,
+        'comment_form': comment_form,
+    })
 
-def comment_delete(request, slug, comment_id):
-    """
-    View delete comment
-    """
-    queryset = Event.objects.filter(status=1)
-    event  = get_object_or_404(queryset, slug=slug)
-    comment = get_object_or_404(Comment, pk=comment_id)
-
-    if comment.author == request.user:
-        comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
-    else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your comments!')
-
-    return HttpResponseRedirect(reverse('event_detail', args=[slug]))
-
+# Like/Unlike event
 def event_like(request, slug):
     event = get_object_or_404(Event, slug=slug)
-    # You have a like/unlike
     if request.user in event.likes.all():
         event.likes.remove(request.user)
     else:
         event.likes.add(request.user)
-        
-    #Back to the event detail page
     return redirect('event_detail', slug=slug)
 
+# Views for comment
+# Create a new comment
+class NewComment(CreateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = 'blog/comment.html'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        form.instance.event = get_object_or_404(Event, pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse('event_detail', kwargs={'slug': self.object.event.slug})
+
+# Edit a comment
+class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = "blog/edit_comment.html"
+
+    def form_valid(self, form):
+        messages.success(self.request, "Your comment has been updated")
+        return super().form_valid(form)
+
+    def test_func(self):
+        return self.request.user == self.get_object().author
+
+    def get_success_url(self):
+        return reverse('event_detail', kwargs={'slug': self.object.event.slug})
+
+# Delete a comment
+class DeleteComment(UserPassesTestMixin, DeleteView):
+    model = Comment
+
+    def test_func(self):
+        return self.request.user == self.get_object().author
+
+    def get_success_url(self):
+        return reverse('event_detail', kwargs={'slug': self.object.event.slug})
