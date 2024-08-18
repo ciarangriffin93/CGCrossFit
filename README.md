@@ -4,6 +4,11 @@
 
 # CrossFit - A Django project 4 for Code Institute
 
+Link to live website here:
+[Click Me](https://crossfit-pp4-85463579609b.herokuapp.com/)
+
+![Am I responsive](docs/images/am-i-responsive.png)
+
 ## Table of Contents
 
 ## Project Goals and Planning
@@ -84,7 +89,7 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
    Was used to validate all the HTML code
 * [W3C CSS:](https://jigsaw.w3.org/css-validator/)<br>
    Was used to validate the CSS code
-* [Am I responsive:]( https://ui.dev/amiresponsive)<br>
+* [Am I responsive:](https://techsini.com/multi-mockup/index.php)<br>
    For testing wireframes.
 * [Fontawesome:](https://fontawesome.com/)<br>
    To add icons to the website
