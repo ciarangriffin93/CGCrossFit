@@ -19,6 +19,50 @@ Link to live website here:
 
 ## Wireframes
 
+* I used [Balsamiq](https://balsamiq.com/wireframes) to design the wireframes for my website.
+
+#### Desktop:
+<details>
+
+![Desktop Home page](/docs/images/desktop-home.png)
+![Desktop Event page](/docs/images/desktop-event.png)
+![Desktop About page](/docs/images/desktop-about.png)
+![Desktop Classes page](/docs/images/desktop-classes.png)
+![Desktop Cantact page](/docs/images/desktop-contact.png)
+![Desktop Booking page](/docs/images/desktop-booking.png)
+![Desktop Booking page](/docs/images/desktop-booking-page.png)
+![Desktop Booking page](/docs/images/desktop-cancel-booking.png)
+![Desktop Booking page](/docs/images/desktop-booking.png)
+![Desktop Booking page](/docs/images/desktop-booking-staff-only.png)
+![Desktop Add class page](/docs/images/desktop-add-class.png)
+![Desktop Cantact page](/docs/images/desktop-contact.png)
+![Desktop Booking page](/docs/images/desktop-booking.png)
+
+</details>
+
+
+#### Ipad:
+<details>
+
+![Ipad Home page](/docs/images/ipad-home.png)
+![Ipad Event page](/docs/images/ipad-event.png)
+![Ipad Booking page](/docs/images/ipad-booking.png)
+![Ipad Boooking page](/docs/images/ipad-booking-page.png)
+![Ipad Booking page](/docs/images/ipad-booking-staff-only.png)
+</details>
+
+#### Mobile:
+<details>
+
+![Mobile Home page](/docs/images/mobile-home.png)
+![Mobile Hone page](/docs/images/mobile-home-page.png)
+![Mobile Event page](/docs/images/mobile-event.png)
+![Mobile About page](/docs/images/mobile-about.png)
+![Mobile Booking page](/docs/images/mobile-booking.png)
+![Mobile Booking page](/docs/images/mobile-booking-staff-only.png)
+</details>
+
+
 ## Database Diagram
 This project the Django User Model.
 The data schema was created using [Lucid](https://lucid.app/ "lucid website homepage").
