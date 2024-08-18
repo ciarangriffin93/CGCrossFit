@@ -29,6 +29,12 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ## Colours
 
+### Color Scheme
+
+![Color Scheme](/docs/images/colour-scheme.png)<br>
+
+* I selected these colors to use on the website. (created with coolers.io)
+
 ## Typography 
 
 ## Features
