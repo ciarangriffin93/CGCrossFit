@@ -141,6 +141,12 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokua
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2F404%2F
 </details>
 
+#### CSS
+<details>
+
+![Style.css](/docs/images/css-validation.png)
+</details>
+
 ## Technologies used
 
 ### Languages Used
