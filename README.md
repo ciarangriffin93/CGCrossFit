@@ -87,6 +87,60 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ## Testing
 
+### Code Validation
+
+#### HTML
+
+<details>
+<summary>home.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2F
+</details>
+
+<details>
+<summary>about.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fabout%2F
+</details>
+
+<details>
+<summary>classes.html</summary>
+https://crossfit-pp4-85463579609b.herokuapp.com/about/classes/
+</details>
+
+<details>
+<summary>contact.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fcontact%2Fcontact%2F
+</details>
+
+<details>
+<summary>booking.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fbooking%2F
+</details>
+
+<details>
+<summary>add_class</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fbooking%2Fclass%2Fadd%2F
+</details>
+
+<details>
+<summary>logout.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Faccounts%2Flogout%2F
+</details>
+
+<details>
+<summary>signup.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Faccounts%2Fsignup%2F
+</details>
+
+<details>
+<summary>login.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Faccounts%2Flogin%2F
+</details>
+
+<details>
+<summary>error404.html</summary>
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2F404%2F
+</details>
+
 ## Technologies used
 
 ### Languages Used
