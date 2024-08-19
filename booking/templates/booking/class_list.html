@@ -10,23 +10,26 @@
     </div>
   </div>
 
-  <div class="text-center mt-2 p-2 pb-0 h3 rfs-11 fw-light">
+  <div class="text-center mt-4 p-6 pb-0 rfs-11 fw-light">
     <div class="class-list">
       {% for class in classes %}
-      <li>
-        <a href="{% url 'class_detail' class.pk %}">{{ class.name }} {{ class.start_time|date:"dS F, Y @ H:i, a" }}</a>
+      <ul>
+        <li>
+          <a href="{% url 'class_detail' class.pk %}">{{ class.name }}
+            {{ class.start_time|date:"dS F, Y @ H:i, a" }}</a>
 
-        <!--- Edit and Delete for staff --->
-        {% if user.is_staff %}
-        <a href="{% url 'edit_class' class.pk %}" class="btn btn-sm btn-edit ms-2">Edit</a>
-        <a href="{% url 'delete_class' class.pk %}" class="btn btn-sm btn-delete ms-2">Delete</a>
-        {% endif %}
-      </li>
+          <!-- Edit and Delete for staff -->
+          {% if user.is_staff %}
+          <a href="{% url 'edit_class' class.pk %}" class="btn btn-sm btn-edit ms-2">Edit</a>
+          <a href="{% url 'delete_class' class.pk %}" class="btn btn-sm btn-delete ms-2">Delete</a>
+          {% endif %}
+        </li>
+      </ul>
       {% empty %}
       <span class="text-danger">There are no Available classes</span>
       {% endfor %}
     </div>
-    
+
     <!-- Add new class button for staff -->
     {% if user.is_staff %}
     <div class="mt-4">
