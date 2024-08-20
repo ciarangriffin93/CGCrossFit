@@ -143,9 +143,126 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokua
 
 #### CSS
 <details>
+<summary>Style.css</summary>
 
 ![Style.css](/docs/images/css-validation.png)
 </details>
+
+#### JAVASCRIPT
+
+<details>
+<summary>map.js</summary>
+
+![map.js](/docs/images/map.png)
+</details>
+
+<details>
+<summary>confirmation_script.js</summary>
+
+![confirmation_script.js](/docs/images/confirmation_script.png)
+</details>
+
+#### Python
+
+* About
+
+<details>
+<summary>admin.py</summary>
+
+
+![admin.py](/docs/images/about-admin.png)
+</details>
+
+<details>
+<summary>models.py</summary>
+
+![models.py](/docs/images/about-model.png)
+</details>
+
+<details>
+<summary>views.py</summary>
+
+![views.py](/docs/images/about-views.png)
+</details>
+
+* Blog
+
+<details>
+<summary>admin.py</summary>
+
+![admin.py](/docs/docs/images/blog-admin.png)
+</details>
+
+<details>
+<summary>forms.py</summary>
+
+![forms.py](/docs/images/blog-forms.png)
+</details>
+
+<details>
+<summary>models.py</summary>
+
+![models.py](/docs/images/blog-models.png)
+</details>
+
+<details>
+<summary>views.py</summary>
+
+![views.py](/docs/images/blog-views.png)
+</details>
+
+* Booking
+
+<details>
+<summary>admin.py</summary>
+
+![admin.py](/docs/docs/images/booking-admin.png)
+</details>
+
+<details>
+<summary>forms.py</summary>
+
+![forms.py](/docs/images/blog-forms.png)
+</details>
+
+<details>
+<summary>models.py</summary>
+
+![models.py](/docs/images/blog-models.png)
+</details>
+
+<details>
+<summary>views.py</summary>
+
+![views.py](/docs/images/booking-views.png)
+</details>
+
+* Contact
+
+<details>
+<summary>admin.py</summary>
+
+![admin.py](/docs/images/contact-admin.png)
+</details>
+
+<details>
+<summary>forms.py</summary>
+
+![forms.py](/docs/images/contact-forms.png)
+</details>
+
+<details>
+<summary>models.py</summary>
+
+![models.py](/docs/images/contact-models.png)
+</details>
+
+<details>
+<summary>views.py</summary>
+
+![views.py](/docs/images/contact-views.png)
+</details>
+
 
 ## Technologies used
 
