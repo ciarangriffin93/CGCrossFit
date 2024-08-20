@@ -4,6 +4,10 @@
 
 # CrossFit - A Django project 4 for Code Institute
 
+Welcome CGCrossFit is your go to website for all things CrossFit. Our platform allows users to easily register for an account, book appointments, and stay informed about upcoming events. We are dedicated to helping individuals achieve their health and fitness goals by providing a seamless experience for managing workouts and connecting with the CrossFit community!
+
+Whether you're looking to schedule your next training session, learn about upcoming CrossFit events, or simply explore information to enhance your fitness journey, CGCrossFit is here to support you every step of the way. Join us today and take the first step towards a healthier, fitter you!
+
 Link to live website here:
 [Click Me](https://crossfit-pp4-85463579609b.herokuapp.com/)
 
@@ -308,7 +312,7 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokua
    To search for images.
 * [W3Schools:](https://www.w3schools.com/)<br>
    To Read the documentation.
-* [PEP8:](http://pep8online.com/)<br>
+* [PEP8:](https://pep8ci.herokuapp.com/)<br>
    Was used to validate all the Python code.
 * [Jshint:](https://jshint.com/)<br>
    Was used to validate all the javascript code.
@@ -487,4 +491,26 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
+#### content:
+
+* [Youtube](https://www.youtube.com/results?search_query=postgrsql): This databases and understanding more about postgrsql.
+
+* [django-cloudinary-storage](https://pypi.org/project/django-cloudinary-storage/): This django-cloudinary-storage package is used for this purpose. More details can be found in the Django Cloudinary Storage documentation.
+
+* [CRUD](https://www.codecademy.com/article/what-is-crud)&[CRUDAPP](https://budibase.com/blog/crud-app): Ths help  to understand and think about CRUD.
+
+* [W3schools](https://www.w3schools.com): This site was created using information W3Schools.
+
+* [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+4/courseware/713441aba05441dfb3a7cf04f3268b3f/824fccecd0fe4e44871eeabcbf69d830/): This is from code institute to learn how to create "I Think Therefore I Blog".
+
+* [Git Commit](https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/): I learn how to writing better commit messages.
+
 ## Acknowledgements 
+
+* I would like to thank to my mentor, Tim Nelson and Rory Sheridan for his help and unwavering support.
+
+* I would like to thank to my tutor at Code Institute for their help and unwavering support.
+
+* I would like to thank to my family for their patience, support, and understanding.
+
+* I would like to Code Institute's Slack community,and Deaf group for their support.
