@@ -6,12 +6,12 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 
+
 class Event(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
-    User, on_delete=models.CASCADE, related_name="blog_posts"
-    )
+        User, on_delete=models.CASCADE, related_name="blog_posts")
     featured_image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
@@ -32,7 +32,7 @@ class Event(models.Model):
 
 
 class Comment(models.Model):
-    event  = models.ForeignKey(
+    event = models.ForeignKey(
         Event, on_delete=models.CASCADE, related_name="blog_comments")
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_commenter_authors")

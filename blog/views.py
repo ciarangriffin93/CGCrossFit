@@ -7,17 +7,20 @@ from .forms import CommentForm
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 
+
 # List view for events
 class EventList(generic.ListView):
     queryset = Event.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 3
 
+
 # Detail view for event including comments
 def event_detail(request, slug):
     event = get_object_or_404(Event, slug=slug)
     comments = event.blog_comments.all().order_by("-created_on")
-    liked = event.likes.filter(id=request.user.id).exists() if request.user.is_authenticated else False
+    liked = event.likes.filter(id=request.user.id).exists
+    () if request.user.is_authenticated else False
     comment_count = event.blog_comments.filter(approved=True).count()
 
     if request.method == "POST":
@@ -27,7 +30,8 @@ def event_detail(request, slug):
             comment.author = request.user
             comment.event = event
             comment.save()
-            messages.success(request, 'Comment submitted and awaiting approval')
+            messages.success(
+                request, 'Comment submitted and awaiting approval')
             return redirect('event_detail', slug=slug)
 
     comment_form = CommentForm()
@@ -39,6 +43,7 @@ def event_detail(request, slug):
         'comment_form': comment_form,
     })
 
+
 # Like/Unlike event
 def event_like(request, slug):
     event = get_object_or_404(Event, slug=slug)
@@ -47,6 +52,7 @@ def event_like(request, slug):
     else:
         event.likes.add(request.user)
     return redirect('event_detail', slug=slug)
+
 
 # Views for comment
 # Create a new comment
@@ -63,6 +69,7 @@ class NewComment(CreateView):
     def get_success_url(self):
         return reverse('event_detail', kwargs={'slug': self.object.event.slug})
 
+
 # Edit a comment
 class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Comment
@@ -78,6 +85,7 @@ class EditComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def get_success_url(self):
         return reverse('event_detail', kwargs={'slug': self.object.event.slug})
+
 
 # Delete a comment
 class DeleteComment(UserPassesTestMixin, DeleteView):
