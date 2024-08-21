@@ -21,7 +21,7 @@
           <!-- Edit and Delete for staff -->
           {% if user.is_staff %}
           <a href="{% url 'edit_class' class.pk %}" class="btn btn-sm btn-edit ms-2">Edit</a>
-          <a href="{% url 'delete_class' class.pk %}" class="btn btn-sm btn-delete ms-2">Delete</a>
+          <a href="{% url 'delete_class' class.pk %}" class="btn btn-sm ms-2">Delete</a>
           {% endif %}
         </li>
       </ul>
