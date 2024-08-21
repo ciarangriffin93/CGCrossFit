@@ -15,6 +15,7 @@ import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+import cloudinary
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,9 +29,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG =  False
 
-ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-043zesczu5i.ws.codeinstitute-ide.net' ,'.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ciarangriffi-cgcrossfit-2nu8x2c1cru.ws.codeinstitute-ide.net' ,'.herokuapp.com']
 
 
 # Application definition
@@ -60,6 +61,10 @@ INSTALLED_APPS = [
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+cloudinary.config(
+    secure=True,
+)
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
@@ -113,7 +118,7 @@ DATABASES = {
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ciarangriffi-cgcrossfit-043zesczu5i.ws.codeinstitute-ide.net'
+    'https://8000-ciarangriffi-cgcrossfit-2nu8x2c1cru.ws.codeinstitute-ide.net'
 ]
 
 # Password validation
