@@ -205,6 +205,24 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ![booking-page](/docs/images/book-cancelled.png)
 
+### Add Class Page (Staff member only)
+
+![add_class-page](/docs/images/class-edit-detele.png)
+
+<h4>Only staff members can sign in and create a CrossFit class, including setting the time and date.</h4>
+
+![add_class-page](/docs/images/add_class-page.png)
+
+<h4>Only staff members can use the "Edit" option to change class details.</h4>
+
+![add_class-page](/docs/images/edit-class.png)
+
+<h4>Only staff members can delete class details</h4>
+
+![add_class-page](/docs/images/delete-class.png)
+
+
+
 
 ## Future Features
 
