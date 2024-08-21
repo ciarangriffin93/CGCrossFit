@@ -367,28 +367,10 @@ li {
     background-color: #1b9b0a;
 }
 
-/*--- MAP ---*/
-
-#map {
-    height: 35vh;
-    width: 50%;
-    box-shadow: 20px 0px 30px #295500;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 20px;
-    
-}
-
 .section-heading {
     color: #295500;
     font-weight: bold;
     margin: 20px;
-}
-
-/*--- Optional hover to match the zoom icon */
-
-.leaflet-touch .geocoder-control-input:hover {
-    background-color: #000000;
 }
 
 /*--- Footer ---*/
