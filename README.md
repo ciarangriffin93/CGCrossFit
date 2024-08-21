@@ -17,6 +17,15 @@ Link to live website here:
 
 ## Project Goals and Planning
 
+This site was developed using:
+
+* Create a website using Django.
+
+* Using Bootstrap, HTML, CSS, python and javascript.
+
+* Create a website with CRUD functionality.
+
+
 ## UX
 
 ## User Stories
