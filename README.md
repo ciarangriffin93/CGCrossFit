@@ -25,10 +25,45 @@ This site was developed using:
 
 * Create a website with CRUD functionality.
 
-
 ## UX
 
-## User Stories
+#### Agile Methodology
+
+This project was developed using the Agile methodology. The implementation progress of all epics and user stories was tracked through a GitHub Project can be found. [here](https://github.com/users/ciarangriffin93/projects/21/views/1)
+
+![Agile](/docs/images/agile.png)
+
+#### User Stories
+
+The goal of this website is to make CrossFit booking easy. Users just need to log in, which will take them to a page where they can book CrossFit sessions.
+
+Users also have the ability to edit and delete their reservations while logged in. The website is designed to be easy to navigate, and it clearly shows available booking slots.
+
+|   EPIC                                | |                                User Story                                                    |
+| :-------------------------------------|--|:------------------------------------------------------------------------------------------- |
+|**ADMINISTRATION**                     |  ||
+|                                       || As a logged-in admin, I want to access the admin page.|
+|                                       || As a logged-in admin, I want to authenticate and manage comments.|
+|                                       || As a logged-in admin, I want to create new users and authors.|
+|                                       || As a logged-in admin, I want to delete users, booking authors, and comments.|
+|**CONTENT**                            |  ||
+|                                       || As a user, I want to see a menu so I can easily navigate through website content |             
+|                                       || As a user, I want to understand what the website is about without having to read too much.|
+|**USER REGISTRATION**                  |  || 
+|                                       || As a user, I want to register on the website.|
+|                                       || As a user, I want to authenticate using only my email and password.|
+|                                       || As a user, I want to know that I've logged out successfully.|
+|**BLOGS EVENT**                        |  ||
+|                                       || 
+|                                       || As a logged-in user, I want to select a blog and comment on or like the selected blog.|
+|                                       || As a logged-in user, I want to delete and edit my own previous comments.|
+|**BOOKING**                            |  ||
+|                                       || As a user, I want to book an appointment.|
+|                                       || As a logged-in user, I want to cancel a booking.|
+|**CONTACT**                            |  ||
+|                                       || As a user, I want to contact the admin.|
+|                                       || As a user, I want to receive confirmation that my message has been received.|
+|                                       || As a user, I want to see contact information on the website.|
 
 ## Wireframes
 
@@ -86,11 +121,11 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ## Colours
 
-### Color Scheme
-
-![Color Scheme](/docs/images/colour-scheme.png)<br>
+#### Color Scheme
 
 * I selected these colors to use on the website. (created with coolers.io)
+
+![Color Scheme](/docs/images/colour-scheme.png)<br>
 
 ## Typography 
 
