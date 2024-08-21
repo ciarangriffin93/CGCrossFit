@@ -15,6 +15,71 @@ Link to live website here:
 
 ## Table of Contents
 
+- [Project Goals](#project-goals-and-planning)
+- [UX](#ux)
+  - [Agile](#agile-methodology)
+  - [User Stories](#user-stories)
+- [Wireframes](#wireframes)
+  - [Desktop](#desktop)
+  - [Ipad](#ipad)
+  - [Mobile](#mobile)
+- [Database Diagram](#database-diagram)
+- [General Features](#general-features)
+- [Colour](#colours)
+  - [Color Scheme](#color-scheme)
+- [Typography](#typography)
+- [Features](#features)
+  - [Header and Nav](#header-and-nav)
+  - [Home Page](#home-page)
+  - [About Page](#about-page)
+  - [Classes Page](#classes-page)
+  - [Contact Page](#contact-page)
+  - [Booking Page](#booking-page)
+  - [Add Class Page](#add-class-page-staff-member-only)
+- [Future Features](#future-features)
+  - [Email Registration](#email-registration)
+  - [Cancellation Window](#cancellation-window)
+  - [Admin Page Enhancements](#admin-page-enhancements)
+- [Testing](#testing)
+  - [Code Validation](#code-validation)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [Lighthouse](#lighthouse)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
+  - [JAVASCRIPT](#javascript)
+  - [Python](#python)
+- [Technologies used](#technologies-used)
+  - [Languages Used](#languages-used)
+  - [Django Packages](#django-packages)
+  - [Frameworks](#frameworks)
+- [Deployment](#deployment)
+  - [PostgreSQL Database](#postgresql-database)
+  - [Cloudinary API](#cloudinary-api)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Local Deployment](#local-deployment)
+  - [Cloning](#cloning)
+  - [Forking](#forking)
+- [Credits](#credits)
+  - [content](#content)
+- [Acknowledgements](#acknowledgements)
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 ## Project Goals and Planning
 
 This site was developed using:
@@ -517,7 +582,7 @@ Python testing was done using the PEP8.<br>All python files were entered into th
 * [Django](https://www.python.org/)
 * [Bootstrap](https://getbootstrap.com/)
 
-#### Django Packages
+### Django Packages
 
 * [Psycopg2:](https://pypi.org/project/psycopg2/)<br>
    A library for Python that facilitates interaction with PostgreSQL databases.
