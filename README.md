@@ -221,10 +221,28 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ![add_class-page](/docs/images/delete-class.png)
 
-
-
-
 ## Future Features
+
+### Email Registration:
+
+* User Flow: 
+Allow users to register an email address when they book a session or through their profile settings.
+Notification System: Integrate an email service provider (like SendGrid or Mailgun) to handle email notifications. Ensure that users receive updates for changes or cancellations of their sessions.
+Backend Logic: Implement logic to check for changes or cancellations and trigger email notifications accordingly.
+
+### Cancellation Window:
+
+* Cancellation Policy: 
+Define a specific time frame (e.g., 24 hours before the session) during which users cannot cancel their bookings.
+User Interface: Display this cancellation policy clearly during the booking process and in user account settings.
+Enforcement: Implement backend validation to prevent cancellations within the specified window. Consider offering a grace period or exception handling for special cases.
+
+### Admin Page Enhancements:
+
+* Activity and Session Management: 
+Develop an admin interface where administrators can view, edit, and manage Activity and Session models.
+Permissions: Ensure that only authorized users (e.g., admins) have access to this page and can make changes.
+User Experience: Provide a user-friendly interface with search and filter options to easily locate and modify records. Consider adding validation checks to ensure data integrity during updates.
 
 ## Testing
 
