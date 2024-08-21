@@ -195,6 +195,87 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokua
 ![Style.css](/docs/images/css-validation.png)
 </details>
 
+#### Lighthouse
+
+Lighthouse was used to test Performance, Best Practices, Accessibility and SEO on Desktop and Mobile.
+
+### Desktop
+
+<details>
+<summary>Home-page</summary>
+
+![Home](/docs/images/homepage-desktop.png)
+</details>
+
+<details>
+<summary>About-page</summary>
+
+![About](/docs/images/about-desktop.png)
+</details>
+
+<details>
+<summary>Classes-page</summary>
+
+![Classes](/docs/images/classes-desktop.png)
+</details>
+
+<details>
+<summary>Contact-page</summary>
+
+![Contact](/docs/images/contact-desktop.png)
+</details>
+
+<details>
+<summary>Booking-page</summary>
+
+![Booking](/docs/images/booking-desktop.png)
+</details>
+
+<details>
+<summary>add_class-page</summary>
+
+![Add_class](/docs/images/addclass-desktop.png)
+</details>
+
+### Mobile
+
+<details>
+<summary>Home-page</summary>
+
+![Home](/docs/images/about-mobile.png)
+</details>
+
+<details>
+<summary>About-page</summary>
+
+![About](/docs/images/about-mobile.png)
+</details>
+
+<details>
+<summary>Classes-page</summary>
+
+![Classes](/docs/images/addclass-mobile.png)
+</details>
+
+<details>
+<summary>Contact-page</summary>
+
+![Contact](/docs/images/contact-mobile.png)
+</details>
+
+<details>
+<summary>Booking-page</summary>
+
+![Booking](/docs/images/booking-mobile.png)
+</details>
+
+<details>
+<summary>add_class-page</summary>
+
+![Add_class](/docs/images/addclass-mobile.png)
+</details>
+
+
 #### JAVASCRIPT
 
 <details>
@@ -210,6 +291,8 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokua
 </details>
 
 #### Python
+
+Python testing was done using the PEP8.<br>All python files were entered into the online checker and no errors were found in any of the custom code.
 
 * About
 
