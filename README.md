@@ -54,7 +54,6 @@ Users also have the ability to edit and delete their reservations while logged i
 |                                       || As a user, I want to authenticate using only my email and password.|
 |                                       || As a user, I want to know that I've logged out successfully.|
 |**BLOGS EVENT**                        |  ||
-|                                       || 
 |                                       || As a logged-in user, I want to select a blog and comment on or like the selected blog.|
 |                                       || As a logged-in user, I want to delete and edit my own previous comments.|
 |**BOOKING**                            |  ||

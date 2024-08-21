@@ -9,11 +9,11 @@
       <div class="col-md-6 masthead-text">
         <!-- Event title -->
         <h1 class="event-title">{{ event.title }}</h1>
-        <!-- Event author and creation date -->
-        <p class="event-subtitle">{{ event.author }} | {{ event.created_on }}</p>
+        <!-- Creation date -->
+        <p class="event-subtitle">{{ event.created_on }}</p>
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
-        <img src="{% static 'images/crossfit1.jpeg' %}" class="scale" alt="placeholder">
+        <img class="card-img-top" src=" {{ event.featured_image.url }}" alt="{{ event.title }}">
       </div>
     </div>
   </div>
