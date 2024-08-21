@@ -130,6 +130,82 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ## Features
 
+### Header and Nav
+
+<h4>The navigation elements include Home, About, Classes, Contact, and Booking. If the user is signed in, there will also be a link to My Bookings and comment.</h4>
+
+![Header](/docs/images/header-nav.png)
+
+<h4>add_class navigation should only be visible to users with staff status. Staff members should see the add_class option in the navigation, while regular users should not.</h4>
+
+![Header](/docs/images/header.png)
+
+### Home Page
+
+<h4>Welcome to join if you are interested in joining CrossFit. CGCrossfit is a CrossFit gym located in Dublin. Our website is designed to showcase the wide range of services we offer to help you achieve your fitness goals.</4>
+
+![Home-page](/docs/images/home-page.png)
+![Home-page](/docs/images/join-us.png)
+
+<h4>The events are clickable and will render more information about the event.</h4>
+
+![Home-page](/docs/images/home-event-page.png)
+
+<h4>Users have access to events and can also find more information about CrossFit and healthy living.</h4>
+
+![Event-page](/docs/images/event-page.png)
+
+<h4>At the bottom of this page, users can read comments from other users. If a user is logged in or, they have access to buttons for deleting or updating comments. And Users can also click the heart icon to like event.</h4>
+
+![Event-page](/docs/images/add-comment-page.png)
+![Event-page](/docs/images/leave-comment-page.png)
+
+<h4>Users are allowed to edit their own post comments.</h4>
+
+![Event-page](/docs/images/edit-comment-page.png)
+
+<h4>Users are allowed to delete their own post comments.</h4>
+
+![Event-page](/docs/images/delete-comment.png)
+
+### About Page
+
+<h4>Users can read information about CrossFit.</h4>
+
+![About-page](/docs/images/about-page.png)
+
+### Classes Page
+
+<h4>Users can view the class timetable.</h4>
+
+![Classes-page](/docs/images/classes-page.png)
+
+### Contact Page
+
+<h4>The Contact Page allows users to access contact details and send emails using the contact form.</h4>
+
+![Contact-page](/docs/images/contact-page.png)
+
+### Booking Page
+
+<h4>If a user is not signed in, they will be redirected to the registration form. A signed-in user can book a session by selecting a date and time.</h4>
+
+![booking-page](/docs/images/users-booking.png)
+![booking-page](/docs/images/click-book.png)
+
+<h4>When a user makes a booking, a message will show that the booking was successful</h4>
+
+![booking-page](/docs/images/book-successful.png)
+
+<h4>Users can cancel their booking if needed</h4>
+
+![booking-page](/docs/images/cancel-book.png)
+
+<h4>When a user makes a canceled booking, a message will show that the booking cancelled</h4>
+
+![booking-page](/docs/images/book-cancelled.png)
+
+
 ## Future Features
 
 ## Testing
