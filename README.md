@@ -313,6 +313,20 @@ I chose this font for its tall height and wide proportions, which enhances reada
 
 ![Error page](/docs/images/404-error3.png)
 
+### Django Administration
+
+* On the admin panel, as an admin or superuser, I have full access to CRUD functionality. This allows me to view, create, edit, and delete the following items.:
+
+* Blog
+* About
+* Booking
+* Comments
+* Author
+* Categories
+* Profiles
+
+![Django Administration](/docs/images/django-administration.png)
+
 ## General Features
 
 <h4>High-Intensity Workouts:</h4> 
