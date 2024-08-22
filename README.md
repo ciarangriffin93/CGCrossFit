@@ -274,6 +274,8 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ## Colours
 
+I chose green as the primary color to evoke the energy and vitality associated with a CrossFit gym, while also reinforcing its dynamic environment. Paired with a white background, this green creates a striking contrast that results in a clean and polished look. The use of green as the primary color effectively ties all design elements together, ensuring a cohesive and energizing brand identity.
+
 #### Color Scheme
 
 * I selected these colors to use on the website. (created with coolers.io)
