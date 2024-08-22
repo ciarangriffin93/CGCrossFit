@@ -11,7 +11,7 @@ Whether you're looking to schedule your next training session, learn about upcom
 Link to live website here:
 [Click Me](https://crossfit-pp4-85463579609b.herokuapp.com/)
 
-![Am I responsive](docs/images/am-i-responsive.png)
+![Am I responsive](/docs/images/am-i-responsive-cf.png)
 
 ## Table of Contents
 
