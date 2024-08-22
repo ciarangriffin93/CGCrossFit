@@ -201,8 +201,6 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 
 ![Image of Database](/docs/images/database.png)
 
-## General Features
-
 ## Colours
 
 I chose green as the primary color to evoke the energy and vitality associated with a CrossFit gym, while also reinforcing its dynamic environment. Paired with a white background, this green creates a striking contrast that results in a clean and polished look. The use of green as the primary color effectively ties all design elements together, ensuring a cohesive and energizing brand identity.
@@ -656,7 +654,7 @@ Python testing was done using the PEP8.<br>All python files were entered into th
 | Add class | Clicked Add class nav link | Add class form showed | Worked as expected |
 | New add class added to booking page | User can see it on the booking page | Staff can see edit and delete buttons on the booking page |
 
-## Edit Add Class
+### Edit Add Class
 
 | **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
 | -------- | ---------- | --------------- | -----------|
@@ -687,6 +685,10 @@ Python testing was done using the PEP8.<br>All python files were entered into th
 | **TEST** | **ACTION** | **EXPECTATION** | **RESULT** | 
 | -------- | ---------- | --------------- | -----------| 
 | 404 Error | Typed /A at end of url | 404 error page to show | Worked as expected | 
+
+## Bugs
+
+No known unresolved bugs
 
 ## Technologies used
 
