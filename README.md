@@ -136,6 +136,7 @@ Users also have the ability to edit and delete their reservations while logged i
 * As a site staff member, I can manage CrossFit classes (create, read, update, and delete) so that users can view and participate in upcoming CrossFit session
 
 <h4>AC1: Create New CrossFit Class</h4>
+
 * Given I am a site staff member,
 * When I navigate to the 'Add Class' form on the admin panel,
 * Then I should be able to fill out the form with the following details:
@@ -150,6 +151,7 @@ Description
 * I should see a confirmation message (e.g., "CrossFit class successfully created").
 
 <h4>AC2: Read/View CrossFit Classes</h4>
+
 * Given a CrossFit class has been created,
 * When I visit the homepage or classes section,
 *Then I should see a list of upcoming CrossFit classes with details such as:
@@ -160,6 +162,7 @@ Available Slots
 Users should be able to view these classes in a calendar view or list format.
 
 <h4>AC3: Update/Edit CrossFit Class</h4>
+
 * Given I am a site staff member,
 * I have created a CrossFit class,
 * When I navigate to the admin panel and select the class I want to edit,
@@ -169,6 +172,7 @@ Users should be able to view these classes in a calendar view or list format.
 * I should see a confirmation message (e.g., "CrossFit class successfully updated").
 
 <h4>AC4: Delete CrossFit Class</h4>
+
 * Given I am a site staff member,
 * I have created a CrossFit class,
 * I navigate to the admin panel and select the class I want to delete,
@@ -181,6 +185,7 @@ Users should be able to view these classes in a calendar view or list format.
 * As a site user, I can log in with my created username and password to access the site and view my previous actions, including registered CrossFit classes.
 
 <h4>AC1: User Login</h4>
+
 * Given I am a registered site user,
 * When I navigate to the login page,
 * Then I should see a form that requires my username and password,
@@ -191,6 +196,7 @@ Users should be able to view these classes in a calendar view or list format.
 I should see an error message (e.g., "Invalid username or password. Please try again."),
 
 <h4>AC2: View Registered CrossFit Classes</h4>
+
 * Given I am a logged-in user,
 *  I have registered for CrossFit classes in previous sessions,
 * When I navigate to my dashboard or profile page,
@@ -275,6 +281,8 @@ The data schema was created using [Lucid](https://lucid.app/ "lucid website home
 ![Color Scheme](/docs/images/colour-scheme.png)<br>
 
 ## Typography 
+
+I chose this font for its tall height and wide proportions, which enhances readability and mirrors the dynamic and vertical nature of CrossFit exercises. Its friendly appearance is balanced with boldness and strength, making it not only visually appealing but also effective in maintaining a smooth flow throughout the site.
 
 ## Features
 
