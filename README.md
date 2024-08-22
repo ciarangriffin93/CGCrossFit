@@ -19,6 +19,8 @@ Link to live website here:
 - [UX](#ux)
   - [Agile](#agile-methodology)
   - [User Stories](#user-stories)
+  - [Epic: Staff](#epic-staff---crossfit-class)
+  - [Epic: User](#epic-site-access---user-authentication)
 - [Wireframes](#wireframes)
   - [Desktop](#desktop)
   - [Ipad](#ipad)
@@ -128,6 +130,87 @@ Users also have the ability to edit and delete their reservations while logged i
 |                                       || As a user, I want to contact the admin.|
 |                                       || As a user, I want to receive confirmation that my message has been received.|
 |                                       || As a user, I want to see contact information on the website.|
+
+### Epic: Staff - CrossFit Class
+
+* As a site staff member, I can manage CrossFit classes (create, read, update, and delete) so that users can view and participate in upcoming CrossFit session
+
+<h4>AC1: Create New CrossFit Class</h4>
+* Given I am a site staff member,
+* When I navigate to the 'Add Class' form on the admin panel,
+* Then I should be able to fill out the form with the following details:
+Class Name 
+Date and Time 
+Duration 
+Instructor Name 
+Maximum Participants 
+Description 
+* I can submit the form,
+* Then the new CrossFit class should be created and saved in the system,
+* I should see a confirmation message (e.g., "CrossFit class successfully created").
+
+<h4>AC2: Read/View CrossFit Classes</h4>
+* Given a CrossFit class has been created,
+* When I visit the homepage or classes section,
+*Then I should see a list of upcoming CrossFit classes with details such as:
+Class Name
+Date and Time
+Instructor Name
+Available Slots
+Users should be able to view these classes in a calendar view or list format.
+
+<h4>AC3: Update/Edit CrossFit Class</h4>
+* Given I am a site staff member,
+* I have created a CrossFit class,
+* When I navigate to the admin panel and select the class I want to edit,
+* I should be able to update any of the class details (e.g., time, instructor, maximum participants),
+* Save the changes,
+* the updated details should be reflected in the system,
+* I should see a confirmation message (e.g., "CrossFit class successfully updated").
+
+<h4>AC4: Delete CrossFit Class</h4>
+* Given I am a site staff member,
+* I have created a CrossFit class,
+* I navigate to the admin panel and select the class I want to delete,
+* I should be able to delete the class,
+* I should see a confirmation message (e.g., "CrossFit class successfully deleted"),
+* The class should no longer appear on the homepage or in the classes list.
+
+### Epic: Site Access - User Authentication
+
+* As a site user, I can log in with my created username and password to access the site and view my previous actions, including registered CrossFit classes.
+
+<h4>AC1: User Login</h4>
+* Given I am a registered site user,
+* When I navigate to the login page,
+* Then I should see a form that requires my username and password,
+* I can enter my credentials and submit the form,
+* I should be logged in,
+* I should see a welcome message (e.g., "Welcome, [Username]!").
+* If the credentials are incorrect:
+I should see an error message (e.g., "Invalid username or password. Please try again."),
+
+<h4>AC2: View Registered CrossFit Classes</h4>
+* Given I am a logged-in user,
+*  I have registered for CrossFit classes in previous sessions,
+* When I navigate to my dashboard or profile page,
+* I should see a list of all the CrossFit classes I have registered for,
+* Including details such as Class Name, Date and Time, Instructor, and Status (e.g., "Registered").
+* If I have not registered for any classes:
+I should see a message indicating that (e.g., "You have not registered for any CrossFit classes yet."),
+I should be provided with a link or option to browse upcoming classes.
+
+<h4>AC3: User Logout</h4>
+
+* Given I am a logged-in user,
+* When I click on the "Logout" button or link,
+* I should be prompted with a confirmation message (e.g., "Are you sure you want to log out?"),
+* If I confirm the logout:
+I should be logged out of the system,
+I should be redirected to the homepage or a logged-out landing page,
+I should see a message confirming the logout (e.g., "You have successfully logged out.").
+* If I cancel the logout action:
+I should remain logged in and stay on the current page.
 
 ## Wireframes
 
