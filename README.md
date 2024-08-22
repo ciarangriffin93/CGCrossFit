@@ -504,7 +504,6 @@ Lighthouse was used to test Performance, Best Practices, Accessibility and SEO o
 ![Add_class](/docs/images/addclass-mobile.png)
 </details>
 
-
 #### JAVASCRIPT
 
 <details>
@@ -527,7 +526,6 @@ Python testing was done using the PEP8.<br>All python files were entered into th
 
 <details>
 <summary>admin.py</summary>
-
 
 ![admin.py](/docs/images/about-admin.png)
 </details>
@@ -622,6 +620,73 @@ Python testing was done using the PEP8.<br>All python files were entered into th
 ![views.py](/docs/images/contact-views.png)
 </details>
 
+# Manual Testing
+
+### Home Page
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Nav Links | Opened site url | Only "Register" is visible | Worked as expected |
+| Event Cards | Opened site url | Event cards are visible | Worked as expected |
+
+### Edit Comment
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Submit | Clicked submit | New edits show on edit page | Worked as expected |
+| New comment added to event page | Clicked save | New comment show on Event page | Worked as expected |
+
+### Delete Comment
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Delete Comment | Clicked "Delete" button on event page | Message show deleted. | Worked as expected |
+| Delete comment on delete page | Clicked delete | comment is removed from homepage | Worked as expected |
+
+### Staff Member
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Can see edit and delete buttons | As a staff user, I can see the edit and delete buttons for only the classes I created | Worked as expected |
+
+## Add Class
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------| 
+| Add class | Clicked Add class nav link | Add class form showed | Worked as expected |
+| New add class added to booking page | User can see it on the booking page | Staff can see edit and delete buttons on the booking page |
+
+## Edit Add Class
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Submit | Clicked submit | New add class show on class list page | Worked as expected |
+| New edit added to add class page | Clicked save | New edit show on add class page | Worked as expected |
+
+### Delete add class
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Delete add class list | Clicked Delete button on add class list page | Message showed deleted. | Worked as expected |
+| Delete add class list on delete page | Clicked delete | comment is removed from class page | Worked as expected |
+
+### Book
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Book | Clicked Book button on booking page | Message: Show booking successfully. | Worked as expected |
+
+### Book cancel
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** |
+| -------- | ---------- | --------------- | -----------|
+| Book cancel | Clicked Book cancel button on booking page | Message: Show booking cancelled successfully. | Worked as expected |
+
+### Error 404
+
+| **TEST** | **ACTION** | **EXPECTATION** | **RESULT** | 
+| -------- | ---------- | --------------- | -----------| 
+| 404 Error | Typed /A at end of url | 404 error page to show | Worked as expected | 
 
 ## Technologies used
 
