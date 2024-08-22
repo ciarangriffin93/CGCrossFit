@@ -419,51 +419,71 @@ User Experience: Provide a user-friendly interface with search and filter option
 
 <details>
 <summary>home.html</summary>
+
+![Home](/docs/images/home-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2F
 </details>
 
 <details>
 <summary>about.html</summary>
+
+![About](/docs/images/about-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fabout%2F
 </details>
 
 <details>
 <summary>classes.html</summary>
-https://crossfit-pp4-85463579609b.herokuapp.com/about/classes/
+
+![Classes](/docs/images/classes-validation.png)
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fabout%2Fclasses%2F
 </details>
 
 <details>
 <summary>contact.html</summary>
+
+![Contact](/docs/images/contact-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fcontact%2Fcontact%2F
 </details>
 
 <details>
 <summary>booking.html</summary>
+
+![Booking](/docs/images/booking-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fbooking%2F
 </details>
 
 <details>
 <summary>add_class</summary>
+
+![Add class](/docs/images/addclass-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Fbooking%2Fclass%2Fadd%2F
 </details>
 
 <details>
 <summary>logout.html</summary>
+
+![Logout](/docs/images/logout-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Faccounts%2Flogout%2F
 </details>
 
 <details>
 <summary>signup.html</summary>
+
+![Signup](/docs/images/signup-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Faccounts%2Fsignup%2F
 </details>
 
 <details>
 <summary>login.html</summary>
+
+![Login](/docs/images/login-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2Faccounts%2Flogin%2F
 </details>
 
 <details>
 <summary>error404.html</summary>
+
+![Erroe404](/docs/images/404-validation.png)
 https://validator.w3.org/nu/?doc=https%3A%2F%2Fcrossfit-pp4-85463579609b.herokuapp.com%2F404%2F
 </details>
 
