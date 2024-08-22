@@ -38,6 +38,7 @@ Link to live website here:
   - [Contact Page](#contact-page)
   - [Booking Page](#booking-page)
   - [Add Class Page](#add-class-page-staff-member-only)
+  - [Error Page](#error-page)
 - [Future Features](#future-features)
   - [Email Registration](#email-registration)
   - [Cancellation Window](#cancellation-window)
@@ -378,6 +379,14 @@ I chose this font for its tall height and wide proportions, which enhances reada
 <h4>Only staff members can delete class details</h4>
 
 ![add_class-page](/docs/images/delete-class.png)
+
+### Error Page
+
+<h4>404 Not Found” is displayed when a user tries to access a page that doesn’t exist. This message suggests that the user may have mistyped the URL or clicked on a broken link. The page includes a button to redirect users back to the homepage.</h4>
+
+![Error page](/docs/images/404-error3.png)
+
+
 
 ## Future Features
 
