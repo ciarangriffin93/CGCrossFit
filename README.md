@@ -172,7 +172,6 @@ I should remain logged in and stay on the current page.
 
 </details>
 
-
 #### Ipad:
 <details>
 
@@ -314,7 +313,23 @@ I chose this font for its tall height and wide proportions, which enhances reada
 
 ![Error page](/docs/images/404-error3.png)
 
+## General Features
 
+<h4>High-Intensity Workouts:</h4> 
+
+* CrossFit focuses on high-intensity functional movements performed at a high intensity. The workouts are designed to improve overall fitness and can be modified for various fitness levels.
+
+<h4>Functional Movements:</h4>
+
+* Exercises are based on functional movements that mimic everyday activities, such as lifting, squatting, running, and jumping. These movements are designed to improve overall strength, endurance, and mobility.
+
+<h4>Community Focus: </h4>
+
+* CrossFit emphasizes community and camaraderie. Classes often involve group workouts where participants encourage each other and work together, fostering a strong sense of community.
+
+<h4>Skill and Strength Development: </h4>
+
+* CrossFit incorporates a wide range of exercises, including weightlifting, gymnastics, and cardiovascular conditioning. This helps participants develop strength, endurance, agility, and flexibility.
 
 ## Future Features
 
